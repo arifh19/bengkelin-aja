@@ -1,0 +1,4 @@
+
+$(function(){$("#frm_kontak #send_kontak").on("click",function(){kirim_pesan();$(this).prop("disabled",true);});});function kirim_pesan(){var formData=$("#frm_kontak").serialize();$.ajax({url:siteurl+"kontak/kirim_pesan",type:"post",dataType:"json",data:formData+"&kirim_pesan=1",beforeSend(){$("#frm_kontak #send_kontak").prop("disabled",true);},complete(){$("#frm_kontak #send_kontak").prop("disabled",false);},success:function(msg){if(msg['type']=='success'){alertify.notify(msg['msg'],'success');$("#frm_kontak")[0].reset();$("#frm_kontak #send_kontak").prop("disabled",false);}
+else
+{alertify.notify(msg['msg'],'error');}}});}

@@ -1,0 +1,27 @@
+.alertify-notifier{
+	width: auto;
+}
+.alertify-notifier.ajs-center {
+    transform: translateX(-50%);
+}
+.alertify-notifier .ajs-message{
+	width: auto;
+	border: none;
+}
+.box-border-bottom{
+	border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px){
+	.box-contact > *{
+		width: 48%;
+		margin-bottom: 10px;
+	}
+}
+@media (max-width: 568px){
+	.box-contact > *{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}

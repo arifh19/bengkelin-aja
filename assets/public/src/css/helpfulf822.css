@@ -1,0 +1,39 @@
+/* ==========================
+ * NOTE: Don't Import helpful on other sass/scss
+ * =========================== */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0; }
+
+body.no-scroll {
+  overflow: hidden; }
+
+/* Remove list style for typograpy */
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+div {
+  display: block; }
+
+.about-profit .about-info-profit .list-item {
+  width: 100%; }
+
+.about-profit .about-info-profit .about-item .about-content p {
+  padding-right: 30px; }
+
+.box-step .boxPhoto img {
+  left: 0 !important; }
+
+.box-step .boxPhoto .boxWhite {
+  display: none; }
+
+/*# sourceMappingURL=helpful.css.map */
